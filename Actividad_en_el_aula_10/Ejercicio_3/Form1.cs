@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio_2
+namespace Ejercicio_3
 {
     public partial class Form1 : Form
     {
@@ -19,8 +19,7 @@ namespace Ejercicio_2
 
         private void btnImprimirNombre_Click(object sender, EventArgs e)
         {
-            //tbInvitaciones.Text = $"\r\n{tbNombre.Text}";
-            tbInvitaciones.AppendText($"{tbNombre.Text}\r\n");
+            lsbInvitaciones.Items.Add(tbNombre.Text);
             tbNombre.Clear();
         }
     }
